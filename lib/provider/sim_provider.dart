@@ -53,7 +53,7 @@ class SimProvider extends ChangeNotifier {
     isRoaming = data['isRoaming'];
     deviceId = data['deviceId'];
     allSimInfo = data['allSimInfo'] as List<SimCardInfo>? ?? [];
-    deviceId = data['imei'];
+    deviceId = data['imei'] ?? 'N/A';
 
     isLoading = false;
     notifyListeners();
