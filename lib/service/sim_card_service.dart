@@ -1,3 +1,4 @@
+import 'package:flutter_device_imei/flutter_device_imei.dart';
 import 'package:sim_card_code/sim_card_code.dart';
 
 class SimService {
@@ -21,6 +22,7 @@ class SimService {
       SimCardManager.isRoaming,
       SimCardManager.deviceId,
       SimCardManager.allSimInfo,
+      FlutterDeviceImei.instance.getIMEI()
     ]);
 
     return {
@@ -41,6 +43,7 @@ class SimService {
       'isRoaming': results[14],
       'deviceId': results[15],
       'allSimInfo': results[16],
+      'imei': results[16],
     };
   }
 }

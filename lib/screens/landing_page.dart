@@ -158,6 +158,7 @@ class _LandingPageState extends State<LandingPage> {
                           theme,
                         ),
                         _infoRow('Device ID', provider.deviceId, theme),
+                        _infoRow('IMEI', provider.imei, theme),
                       ],
                     ),
                   ),

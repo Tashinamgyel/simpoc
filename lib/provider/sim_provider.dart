@@ -26,6 +26,7 @@ class SimProvider extends ChangeNotifier {
   String? networkType;
   bool isRoaming = false;
   String? deviceId;
+  String? imei;
 
   List<SimCardInfo> allSimInfo = [];
 
@@ -52,6 +53,7 @@ class SimProvider extends ChangeNotifier {
     isRoaming = data['isRoaming'];
     deviceId = data['deviceId'];
     allSimInfo = data['allSimInfo'] as List<SimCardInfo>? ?? [];
+    deviceId = data['imei'];
 
     isLoading = false;
     notifyListeners();

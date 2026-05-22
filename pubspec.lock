@@ -126,6 +126,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "4.5.2"
+  flutter_device_imei:
+    dependency: "direct main"
+    description:
+      name: flutter_device_imei
+      sha256: a0018fd190090849a7697d4608de6c97ebc04398dbdb66cc62671ce47acabb3e
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.0.5"
   flutter_lints:
     dependency: "direct dev"
     description:
