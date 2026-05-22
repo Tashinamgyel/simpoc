@@ -43,7 +43,7 @@ class SimService {
       'isRoaming': results[14],
       'deviceId': results[15],
       'allSimInfo': results[16],
-      'imei': results[16],
+      'imei': results[17],
     };
   }
 }
