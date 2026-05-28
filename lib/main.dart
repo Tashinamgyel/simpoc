@@ -8,7 +8,6 @@ import 'package:simpoc/service/sim_card_service.dart';
 
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
-  await NoScreenshot.instance.screenshotOff();
   await NoScreenshot.instance.screenshotWithImage();
   runApp(
     MultiProvider(
